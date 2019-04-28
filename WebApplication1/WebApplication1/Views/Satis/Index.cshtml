@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebApplication1.Models.Sati>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayName("Şirket Adi")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fiyat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Musteri.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Urunler.UrunAdi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Musteri.Sirket.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Musteri.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Urunler.UrunAdi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SatisID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SatisID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SatisID })
+        </td>
+    </tr>
+}
+
+</table>

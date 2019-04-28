@@ -1,0 +1,67 @@
+﻿@model WebApplication1.Models.Sati
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sati</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RefSirketID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RefSirketID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tarih)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUser.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Musteri.Ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Musteri.Ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Urunler.UrunAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Urunler.UrunAdi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SatisID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

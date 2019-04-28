@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f62440174ac4d039bd3fffd254f470f" Name="Diagram1">
+        <EntityTypeShape EntityType="SalesForceDBModel.AspNetRole" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.AspNetUser" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Country" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Kategori" Width="1.5" PointX="3.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Musteri" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Sati" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Sirket" Width="1.5" PointX="3.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Urunler" Width="1.5" PointX="6" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesForceDBModel.Uye" Width="1.5" PointX="8.25" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="SalesForceDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Satis_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Uye_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Sirket_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Uye_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Urunler_Kategori" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Musteri_Sirket" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Satis_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.FK_Satis_Urunler" ManuallyRouted="false" />
+        <AssociationConnector Association="SalesForceDBModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
